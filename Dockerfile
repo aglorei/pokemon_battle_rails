@@ -10,17 +10,13 @@ RUN addgroup -S pokemaster && \
   -h /pokemon_battle \
   pokemaster
 
+USER pokemaster
 WORKDIR /pokemon_battle
 
-COPY Gemfile* /pokemon_battle/
-RUN chown -R pokemaster:pokemaster /pokemon_battle
-USER pokemaster
+COPY --chown=pokemaster:pokemaster Gemfile* /pokemon_battle/
 RUN bundle install --deployment
 
-USER root
-COPY . /pokemon_battle
-RUN chown -R pokemaster:pokemaster /pokemon_battle
+COPY --chown=pokemaster:pokemaster . /pokemon_battle
 
-USER pokemaster
 ENTRYPOINT ["bundle", "exec"]
 CMD ["rails", "server"]
