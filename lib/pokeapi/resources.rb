@@ -21,7 +21,7 @@ module Pokeapi
 
       def self.find(id)
         response = request(id)
-        raise Client::BadResponse.new(response) unless response.code == '200'
+        raise Client::BadResponse, response unless response.code == '200'
         new ActiveSupport::JSON.decode(response.body)
       end
     end

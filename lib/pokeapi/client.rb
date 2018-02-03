@@ -9,11 +9,11 @@ module Pokeapi
       attr_reader :response
     end
 
-    BASE_URL = 'https://pokeapi.co/api'
+    BASE_URL = 'https://pokeapi.co/api'.freeze
     API_VERSIONS = [
-      V1 = 'v1',
-      V2 = 'v2'
-    ]
+      V1 = 'v1'.freeze,
+      V2 = 'v2'.freeze
+    ].freeze
 
     def self.get(url)
       Rails.logger.info("Started Pokeapi request to #{url}")
