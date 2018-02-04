@@ -17,6 +17,7 @@ COPY --chown=pokemaster:pokemaster Gemfile* /pokemon_battle/
 RUN bundle install --deployment
 
 COPY --chown=pokemaster:pokemaster . /pokemon_battle
+EXPOSE 3000
 
 ENTRYPOINT ["bin/entrypoint"]
 CMD ["bundle", "exec", "rails", "server"]
