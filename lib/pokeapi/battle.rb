@@ -30,7 +30,7 @@ module Pokeapi
       defender.hp -= damage
 
       history << "#{attacker.name} #{ATTACK_VERBS.sample} " \
-        "#{defender.name} with #{move.name} for a damage of #{damage}."
+        "#{defender.name} with \'#{move.name}\' for a damage of #{damage}."
       history << "#{defender.name} is left with an hp of #{defender.hp}."
     end
   end
