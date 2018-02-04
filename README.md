@@ -4,6 +4,7 @@ This repository initializes a Rails v5.1.4 server on ruby 2.5.0, configured with
 ## Quick Start
 ### Prerequisites
 - [Docker](https://www.docker.com/)
+### Install
 ```
 docker pull aglorei/pokemon_battle_rails:latest
 docker run -itd \
