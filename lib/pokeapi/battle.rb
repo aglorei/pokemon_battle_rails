@@ -1,7 +1,7 @@
 module Pokeapi
   class Battle
     DAMAGE_SCALAR = 0.1
-    ATTACK_VERBS = ['attacked', 'smacked', 'knocked', 'slapped']
+    ATTACK_VERBS = %w[attacked smacked knocked slapped].freeze
 
     def initialize(id1, id2)
       @contenders = [Resources::Pokemon.find(id1),
@@ -18,9 +18,7 @@ module Pokeapi
     end
 
     def go
-      while winner.nil? do
-        fight(*contenders.rotate!)
-      end
+      fight(*contenders.rotate!) while winner.nil?
       history << "#{winner.name} is the triumphant winner."
     end
 

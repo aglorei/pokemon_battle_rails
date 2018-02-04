@@ -14,17 +14,6 @@ Style/ClassAndModuleChildren:
   Exclude:
     - 'test/test_helper.rb'
 
-# Offense count: 8
-Style/Documentation:
-  Exclude:
-    - 'spec/**/*'
-    - 'test/**/*'
-    - 'app/controllers/application_controller.rb'
-    - 'app/controllers/healthcheck_controller.rb'
-    - 'config/application.rb'
-    - 'lib/pokeapi/client.rb'
-    - 'lib/pokeapi/resources.rb'
-
 # Offense count: 31
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle.

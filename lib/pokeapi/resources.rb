@@ -45,11 +45,11 @@ module Pokeapi
       def initialize(*args)
         super
         @hp = attributes['stats']
-          .detect{|s| s['stat']['name'] == 'hp'}['base_stat']
-          .to_f
+              .detect { |s| s['stat']['name'] == 'hp' }['base_stat']
+              .to_f
         @moves = attributes['moves']
-          .collect{|m| m['move']['name']}
-          .each_with_object({}) {|move, acc| acc[move] = nil}
+                 .collect { |m| m['move']['name'] }
+                 .each_with_object({}) { |move, acc| acc[move] = nil }
       end
 
       attr_reader :hp, :moves
@@ -60,7 +60,7 @@ module Pokeapi
       end
 
       def hp=(value)
-        @hp = value < 0 ? 0.0 : value
+        @hp = value.ngeative? ? 0.0 : value
       end
 
       def defeated?
