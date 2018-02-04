@@ -1,5 +1,5 @@
 {
-  "effect_chance": null,
+  "effect_chance": 100,
   "generation": {
     "url": "https://pokeapi.co/api/v2/generation/1/",
     "name": "generation-i"
@@ -8,106 +8,98 @@
   "effect_changes": [],
   "names": [
     {
-      "name": "拍击",
+      "name": "绑紧",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/12/",
         "name": "zh-Hans"
       }
     },
     {
-      "name": "はたく",
+      "name": "しめつける",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/11/",
         "name": "ja"
       }
     },
     {
-      "name": "Pound",
+      "name": "Bind",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
       }
     },
     {
-      "name": "Botta",
+      "name": "Legatutto",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/8/",
         "name": "it"
       }
     },
     {
-      "name": "Destructor",
+      "name": "Atadura",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/7/",
         "name": "es"
       }
     },
     {
-      "name": "Pfund",
+      "name": "Klammergriff",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/6/",
         "name": "de"
       }
     },
     {
-      "name": "Écras’Face",
+      "name": "Étreinte",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/5/",
         "name": "fr"
       }
     },
     {
-      "name": "拍擊",
+      "name": "綁緊",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/4/",
         "name": "zh-Hant"
       }
     },
     {
-      "name": "막치기",
+      "name": "조이기",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/3/",
         "name": "ko"
       }
     },
     {
-      "name": "はたく",
+      "name": "しめつける",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/1/",
         "name": "ja-Hrkt"
       }
     }
   ],
-  "id": 1,
+  "id": 20,
   "machines": [],
-  "pp": 35,
+  "pp": 20,
   "contest_combos": {
     "super": {
       "use_after": null,
       "use_before": null
     },
     "normal": {
-      "use_after": null,
-      "use_before": [
+      "use_after": [
         {
-          "url": "https://pokeapi.co/api/v2/move/3/",
-          "name": "double-slap"
-        },
-        {
-          "url": "https://pokeapi.co/api/v2/move/29/",
-          "name": "headbutt"
-        },
-        {
-          "url": "https://pokeapi.co/api/v2/move/185/",
-          "name": "feint-attack"
+          "url": "https://pokeapi.co/api/v2/move/11/",
+          "name": "vice-grip"
         }
-      ]
+      ],
+      "use_before": null
     }
   },
   "effect_entries": [
     {
-      "short_effect": "Inflicts regular damage with no additional effect.",
-      "effect": "Inflicts regular damage.",
+      "short_effect": "Prevents the target from fleeing and inflicts damage for 2-5 turns.",
+      "effect": "Inflicts regular damage.  For the next 2–5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.  The user continues to use other moves during this time.  If the user leaves the field, this effect ends.\n\nHas a 3/8 chance each to hit 2 or 3 times, and a 1/8 chance each to hit 4 or 5 times.  Averages to 3 hits per use.\n\nrapid spin cancels this effect.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
@@ -120,26 +112,39 @@
   },
   "priority": 0,
   "contest_effect": {
-    "url": "https://pokeapi.co/api/v2/contest-effect/1/"
+    "url": "https://pokeapi.co/api/v2/contest-effect/24/"
   },
   "type": {
     "url": "https://pokeapi.co/api/v2/type/1/",
     "name": "normal"
   },
-  "accuracy": 100,
-  "power": 40,
-  "past_values": [],
+  "accuracy": 85,
+  "power": 15,
+  "past_values": [
+    {
+      "pp": null,
+      "power": null,
+      "effect_entries": [],
+      "effect_chance": null,
+      "type": null,
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/11/",
+        "name": "black-white"
+      },
+      "accuracy": 75
+    }
+  ],
   "target": {
     "url": "https://pokeapi.co/api/v2/move-target/10/",
     "name": "selected-pokemon"
   },
   "super_contest_effect": {
-    "url": "https://pokeapi.co/api/v2/super-contest-effect/5/"
+    "url": "https://pokeapi.co/api/v2/super-contest-effect/21/"
   },
-  "name": "pound",
+  "name": "bind",
   "flavor_text_entries": [
     {
-      "flavor_text": "使用长长的尾巴或手等\n拍打对手进行攻击。",
+      "flavor_text": "使用长长的身体或藤蔓等，\n在４～５回合内\n绑紧对手进行攻击。",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/12/",
         "name": "zh-Hans"
@@ -150,7 +155,7 @@
       }
     },
     {
-      "flavor_text": "長い　しっぽや　手などを　使って\n相手を　はたいて　攻撃する。",
+      "flavor_text": "長い　体や　つるなどを　使い\n４ー５ターンの　間\n相手を　締めつけて　攻撃する。",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/11/",
         "name": "ja"
@@ -161,7 +166,7 @@
       }
     },
     {
-      "flavor_text": "The target is physically pounded with a long tail, a\nforeleg, or the like.",
+      "flavor_text": "Things such as long bodies or tentacles are used to\nbind and squeeze the target for four to five turns.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
@@ -172,7 +177,7 @@
       }
     },
     {
-      "flavor_text": "Colpisce il bersaglio con la coda o le zampe\nanteriori.",
+      "flavor_text": "Il lungo corpo o i tentacoli di chi la usa legano e\nstritolano il bersaglio per quattro o cinque turni.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/8/",
         "name": "it"
@@ -183,7 +188,7 @@
       }
     },
     {
-      "flavor_text": "Golpea con las patas o la cola.",
+      "flavor_text": "Ata y oprime de cuatro a cinco turnos.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/7/",
         "name": "es"
@@ -194,7 +199,7 @@
       }
     },
     {
-      "flavor_text": "Ein Hieb mit den Vorderbeinen oder dem Schweif.",
+      "flavor_text": "Umklammert und quetscht das Ziel über vier bis fünf\nRunden.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/6/",
         "name": "de"
@@ -205,7 +210,7 @@
       }
     },
     {
-      "flavor_text": "Écrase l’ennemi avec les pattes avant ou la queue,\npar exemple.",
+      "flavor_text": "Ligote l’ennemi avec les tentacules ou le corps\npour l’écraser durant quatre à cinq tours.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/5/",
         "name": "fr"
@@ -216,7 +221,7 @@
       }
     },
     {
-      "flavor_text": "使用長長的尾巴或手等\n拍打對手進行攻擊。",
+      "flavor_text": "使用長長的身體或藤蔓等，\n在４～５回合內\n綁緊對手進行攻擊。",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/4/",
         "name": "zh-Hant"
@@ -227,7 +232,7 @@
       }
     },
     {
-      "flavor_text": "긴 꼬리나 손 등을 사용하여\n상대를 때려서 공격한다.",
+      "flavor_text": "긴 몸이나 덩굴 등을 써서\n4-5턴 동안\n상대를 조여 공격한다.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/3/",
         "name": "ko"
@@ -238,7 +243,7 @@
       }
     },
     {
-      "flavor_text": "ながい　しっぽや　てなどを　つかって\nあいてを　はたいて　こうげきする。",
+      "flavor_text": "ながい　からだや　つるなどを　つかい\n４ー５ターンの　あいだ\nあいてを　しめつけて　こうげきする。",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/1/",
         "name": "ja-Hrkt"
@@ -249,7 +254,7 @@
       }
     },
     {
-      "flavor_text": "長い　しっぽや　手などを　使って\n相手を　はたいて　攻撃する。\n",
+      "flavor_text": "長い　体や　つるなどを　使い\n４ー５ターンの　あいだ\n相手を　締めつけて　攻撃する。",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/11/",
         "name": "ja"
@@ -260,7 +265,7 @@
       }
     },
     {
-      "flavor_text": "The target is physically pounded with\na long tail, a foreleg, or the like.",
+      "flavor_text": "Things such as long bodies or tentacles\nare used to bind and squeeze\nthe target for four to five turns.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
@@ -271,7 +276,7 @@
       }
     },
     {
-      "flavor_text": "Colpisce il bersaglio con la coda o le zampe\nanteriori.",
+      "flavor_text": "Il lungo corpo o i tentacoli di chi la usa legano e\nstritolano il bersaglio per quattro o cinque turni.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/8/",
         "name": "it"
@@ -282,7 +287,7 @@
       }
     },
     {
-      "flavor_text": "Golpea con las patas o la cola.",
+      "flavor_text": "Ata y oprime de cuatro a cinco turnos.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/7/",
         "name": "es"
@@ -293,7 +298,7 @@
       }
     },
     {
-      "flavor_text": "Ein Hieb mit den Vorderbeinen oder dem Schweif.",
+      "flavor_text": "Umklammert und quetscht das Ziel\nüber vier bis fünf Runden.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/6/",
         "name": "de"
@@ -304,7 +309,7 @@
       }
     },
     {
-      "flavor_text": "Écrase l’ennemi avec les pattes avant ou la queue,\npar exemple.",
+      "flavor_text": "Ligote l’ennemi avec les tentacules ou le corps\npour l’écraser durant quatre à cinq tours.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/5/",
         "name": "fr"
@@ -315,7 +320,7 @@
       }
     },
     {
-      "flavor_text": "긴 꼬리나 손 등을 사용하여\n상대를 때려서 공격한다.",
+      "flavor_text": "긴 몸이나 덩굴 등을 써서\n4-5턴 동안\n상대를 조여 공격한다.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/3/",
         "name": "ko"
@@ -326,7 +331,7 @@
       }
     },
     {
-      "flavor_text": "ながい　しっぽや　てなどを　つかって\nあいてを　はたいて　こうげきする。\n",
+      "flavor_text": "ながい　からだや　つるなどを　つかい\n４ー５ターンの　あいだ\nあいてを　しめつけて　こうげきする。",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/1/",
         "name": "ja-Hrkt"
@@ -337,7 +342,7 @@
       }
     },
     {
-      "flavor_text": "長い　しっぽや　手などを　使って\n相手を　はたいて　攻撃する。\n",
+      "flavor_text": "長い　体や　つるなどを　使い\n４ー５ターンの　あいだ\n相手を　締めつけて　攻撃する。",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/11/",
         "name": "ja"
@@ -348,7 +353,7 @@
       }
     },
     {
-      "flavor_text": "The target is physically pounded with\na long tail, a foreleg, or the like.",
+      "flavor_text": "Things such as long bodies or tentacles\nare used to bind and squeeze\nthe target for four to five turns.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
@@ -359,7 +364,7 @@
       }
     },
     {
-      "flavor_text": "Colpisce il bersaglio con la coda o le zampe\nanteriori.",
+      "flavor_text": "Il lungo corpo o i tentacoli di chi la usa legano e\nstritolano il bersaglio per quattro o cinque turni.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/8/",
         "name": "it"
@@ -370,7 +375,7 @@
       }
     },
     {
-      "flavor_text": "Golpea con las patas o la cola.",
+      "flavor_text": "Ata y oprime de cuatro a cinco turnos.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/7/",
         "name": "es"
@@ -381,7 +386,7 @@
       }
     },
     {
-      "flavor_text": "Ein Hieb mit den Vorderbeinen oder dem Schweif.",
+      "flavor_text": "Umklammert und quetscht das Ziel\nüber vier bis fünf Runden.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/6/",
         "name": "de"
@@ -392,7 +397,7 @@
       }
     },
     {
-      "flavor_text": "Écrase l’ennemi avec les pattes avant ou la queue,\npar exemple.",
+      "flavor_text": "Ligote l’ennemi avec les tentacules ou le corps\npour l’écraser durant quatre à cinq tours.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/5/",
         "name": "fr"
@@ -403,7 +408,7 @@
       }
     },
     {
-      "flavor_text": "긴 꼬리나 손 등을 사용하여\n상대를 때려서 공격한다.",
+      "flavor_text": "긴 몸이나 덩굴 등을 써서\n4-5턴 동안\n상대를 조여 공격한다.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/3/",
         "name": "ko"
@@ -414,7 +419,7 @@
       }
     },
     {
-      "flavor_text": "ながい　しっぽや　てなどを　つかって\nあいてを　はたいて　こうげきする。\n",
+      "flavor_text": "ながい　からだや　つるなどを　つかい\n４ー５ターンの　あいだ\nあいてを　しめつけて　こうげきする。",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/1/",
         "name": "ja-Hrkt"
@@ -425,7 +430,7 @@
       }
     },
     {
-      "flavor_text": "The target is physically pounded with\na long tail or a foreleg, etc.",
+      "flavor_text": "Things such as long bodies or tentacles\nare used to bind and squeeze\nthe target for four to five turns.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
@@ -436,7 +441,7 @@
       }
     },
     {
-      "flavor_text": "The target is physically pounded with\na long tail or a foreleg, etc.",
+      "flavor_text": "Things such as long bodies or tentacles\nare used to bind and squeeze\nthe target for four to five turns.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
@@ -447,7 +452,7 @@
       }
     },
     {
-      "flavor_text": "Écrase l’ennemi avec les pattes\navant, la queue, etc.",
+      "flavor_text": "Ligote l’ennemi avec les tentacules\nou le corps pour l’écraser\ndurant 4 à 5 tours.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/5/",
         "name": "fr"
@@ -458,7 +463,7 @@
       }
     },
     {
-      "flavor_text": "The foe is physically\npounded with a long\ntail or a foreleg,\netc.\n",
+      "flavor_text": "A long body or\ntentacles are used\nto bind and squeeze\nthe foe for two to\nfive turns.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
@@ -469,7 +474,7 @@
       }
     },
     {
-      "flavor_text": "The foe is physically\npounded with a long\ntail or a foreleg,\netc.\n",
+      "flavor_text": "A long body or\ntentacles are used\nto bind and squeeze\nthe foe for two to\nfive turns.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
@@ -480,7 +485,7 @@
       }
     },
     {
-      "flavor_text": "The foe is physically\npounded with a long\ntail or a foreleg,\netc.\n",
+      "flavor_text": "A long body or\ntentacles are used\nto bind and squeeze\nthe foe for two to\nfive turns.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
@@ -491,7 +496,7 @@
       }
     },
     {
-      "flavor_text": "A physical attack\ndelivered with a\nlong tail or a\nforeleg, etc.",
+      "flavor_text": "A long body or\ntentacles are used\nto bind the foe for\ntwo to five turns.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
@@ -502,7 +507,7 @@
       }
     },
     {
-      "flavor_text": "Pounds the foe with\nforelegs or tail.",
+      "flavor_text": "Binds and squeezes the foe\nfor 2 to 5 turns.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
@@ -513,7 +518,7 @@
       }
     },
     {
-      "flavor_text": "Pounds the foe with\nforelegs or tail.",
+      "flavor_text": "Binds and squeezes the foe\nfor 2 to 5 turns.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
@@ -524,7 +529,7 @@
       }
     },
     {
-      "flavor_text": "Pounds with fore­\nlegs or tail.",
+      "flavor_text": "Binds the target\nfor 2-5 turns.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
@@ -535,7 +540,7 @@
       }
     },
     {
-      "flavor_text": "Pounds with fore­\nlegs or tail.",
+      "flavor_text": "Binds the target\nfor 2-5 turns.",
       "language": {
         "url": "https://pokeapi.co/api/v2/language/9/",
         "name": "en"
@@ -552,22 +557,22 @@
   },
   "meta": {
     "category": {
-      "url": "https://pokeapi.co/api/v2/move-category/0/",
-      "name": "damage"
+      "url": "https://pokeapi.co/api/v2/move-category/4/",
+      "name": "damage+ailment"
     },
     "healing": 0,
-    "max_turns": null,
+    "max_turns": 6,
     "drain": 0,
     "ailment": {
-      "url": "https://pokeapi.co/api/v2/move-ailment/0/",
-      "name": "none"
+      "url": "https://pokeapi.co/api/v2/move-ailment/8/",
+      "name": "trap"
     },
     "stat_chance": 0,
     "flinch_chance": 0,
     "min_hits": null,
-    "ailment_chance": 0,
+    "ailment_chance": 100,
     "crit_rate": 0,
-    "min_turns": null,
+    "min_turns": 5,
     "max_hits": null
   }
 }

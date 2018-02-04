@@ -1,0 +1,583 @@
+{
+  "effect_chance": null,
+  "generation": {
+    "url": "https://pokeapi.co/api/v2/generation/1/",
+    "name": "generation-i"
+  },
+  "stat_changes": [],
+  "effect_changes": [],
+  "names": [
+    {
+      "name": "旋风刀",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/12/",
+        "name": "zh-Hans"
+      }
+    },
+    {
+      "name": "かまいたち",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/11/",
+        "name": "ja"
+      }
+    },
+    {
+      "name": "Razor Wind",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      }
+    },
+    {
+      "name": "Ventagliente",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/8/",
+        "name": "it"
+      }
+    },
+    {
+      "name": "Viento Cortante",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/7/",
+        "name": "es"
+      }
+    },
+    {
+      "name": "Klingensturm",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/6/",
+        "name": "de"
+      }
+    },
+    {
+      "name": "Coupe-Vent",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/5/",
+        "name": "fr"
+      }
+    },
+    {
+      "name": "旋風刀",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/4/",
+        "name": "zh-Hant"
+      }
+    },
+    {
+      "name": "칼바람",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/3/",
+        "name": "ko"
+      }
+    },
+    {
+      "name": "かまいたち",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/1/",
+        "name": "ja-Hrkt"
+      }
+    }
+  ],
+  "id": 13,
+  "machines": [
+    {
+      "machine": {
+        "url": "https://pokeapi.co/api/v2/machine/18/"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/1/",
+        "name": "red-blue"
+      }
+    },
+    {
+      "machine": {
+        "url": "https://pokeapi.co/api/v2/machine/19/"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/2/",
+        "name": "yellow"
+      }
+    }
+  ],
+  "pp": 10,
+  "contest_combos": null,
+  "effect_entries": [
+    {
+      "short_effect": "Requires a turn to charge before attacking.",
+      "effect": "Inflicts regular damage.  User's critical hit rate is one level higher when using this move.  User charges for one turn before attacking.\n\nThis move cannot be selected by sleep talk.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      }
+    }
+  ],
+  "contest_type": {
+    "url": "https://pokeapi.co/api/v2/contest-type/1/",
+    "name": "cool"
+  },
+  "priority": 0,
+  "contest_effect": {
+    "url": "https://pokeapi.co/api/v2/contest-effect/2/"
+  },
+  "type": {
+    "url": "https://pokeapi.co/api/v2/type/1/",
+    "name": "normal"
+  },
+  "accuracy": 100,
+  "power": 80,
+  "past_values": [
+    {
+      "pp": null,
+      "power": null,
+      "effect_entries": [],
+      "effect_chance": null,
+      "type": null,
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/5/",
+        "name": "ruby-sapphire"
+      },
+      "accuracy": 75
+    }
+  ],
+  "target": {
+    "url": "https://pokeapi.co/api/v2/move-target/11/",
+    "name": "all-opponents"
+  },
+  "super_contest_effect": {
+    "url": "https://pokeapi.co/api/v2/super-contest-effect/6/"
+  },
+  "name": "razor-wind",
+  "flavor_text_entries": [
+    {
+      "flavor_text": "制造风之刃，\n于第２回合攻击对手。\n容易击中要害。",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/12/",
+        "name": "zh-Hans"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/17/",
+        "name": "sun-moon"
+      }
+    },
+    {
+      "flavor_text": "風の　刃を　つくり\n２ターン目に　相手を　攻撃する。\n急所に　当たりやすい。",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/11/",
+        "name": "ja"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/17/",
+        "name": "sun-moon"
+      }
+    },
+    {
+      "flavor_text": "In this two-turn attack, blades of wind hit opposing\nPokémon on the second turn. Critical hits land\nmore easily.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/17/",
+        "name": "sun-moon"
+      }
+    },
+    {
+      "flavor_text": "Chi la usa genera un turbine al primo turno\ne attacca al secondo. Probabile brutto colpo.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/8/",
+        "name": "it"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/17/",
+        "name": "sun-moon"
+      }
+    },
+    {
+      "flavor_text": "Primero se prepara y en el segundo turno\nataca al oponente con ráfagas de viento\ncortante. Alta probabilidad de ser crítico.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/7/",
+        "name": "es"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/17/",
+        "name": "sun-moon"
+      }
+    },
+    {
+      "flavor_text": "Eine Attacke, die über zwei Runden geht.\nHohe Volltrefferquote.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/6/",
+        "name": "de"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/17/",
+        "name": "sun-moon"
+      }
+    },
+    {
+      "flavor_text": "Attaque en deux tours.\nDes lames de vent frappent l’ennemi au second\ntour. Taux de critique élevé.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/5/",
+        "name": "fr"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/17/",
+        "name": "sun-moon"
+      }
+    },
+    {
+      "flavor_text": "製造出風之刃，\n在下一回合攻擊對手。\n容易擊中要害。",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/4/",
+        "name": "zh-Hant"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/17/",
+        "name": "sun-moon"
+      }
+    },
+    {
+      "flavor_text": "바람의 칼날을 만들어\n2턴째에 상대를 공격한다.\n급소에 맞기 쉽다.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/3/",
+        "name": "ko"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/17/",
+        "name": "sun-moon"
+      }
+    },
+    {
+      "flavor_text": "かぜの　やいばを　つくり\n２ターンめに　あいてを　こうげきする。\nきゅうしょに　あたりやすい。",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/1/",
+        "name": "ja-Hrkt"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/17/",
+        "name": "sun-moon"
+      }
+    },
+    {
+      "flavor_text": "風の　刃を　つくり\n２ターン目に　相手を　攻撃する。\n急所に　当たりやすい。",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/11/",
+        "name": "ja"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/16/",
+        "name": "omega-ruby-alpha-sapphire"
+      }
+    },
+    {
+      "flavor_text": "A two-turn attack. Blades of wind hit\nopposing Pokémon on the second turn.\nCritical hits land more easily.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/16/",
+        "name": "omega-ruby-alpha-sapphire"
+      }
+    },
+    {
+      "flavor_text": "Chi la usa genera un turbine al primo turno\ne attacca al secondo. Probabile brutto colpo.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/8/",
+        "name": "it"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/16/",
+        "name": "omega-ruby-alpha-sapphire"
+      }
+    },
+    {
+      "flavor_text": "Primero se prepara y en el segundo turno\nataca al oponente con ráfagas de viento\ncortante. Alta probabilidad de ser crítico.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/7/",
+        "name": "es"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/16/",
+        "name": "omega-ruby-alpha-sapphire"
+      }
+    },
+    {
+      "flavor_text": "Eine Attacke, die über zwei Runden geht.\nHohe Volltrefferquote.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/6/",
+        "name": "de"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/16/",
+        "name": "omega-ruby-alpha-sapphire"
+      }
+    },
+    {
+      "flavor_text": "Attaque en deux tours.\nDes lames de vent frappent l’ennemi au second\ntour. Taux de critiques élevé.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/5/",
+        "name": "fr"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/16/",
+        "name": "omega-ruby-alpha-sapphire"
+      }
+    },
+    {
+      "flavor_text": "바람의 칼날을 만들어\n2턴째에 상대를 공격한다.\n급소에 맞기 쉽다.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/3/",
+        "name": "ko"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/16/",
+        "name": "omega-ruby-alpha-sapphire"
+      }
+    },
+    {
+      "flavor_text": "かぜの　やいばを　つくり\n２ターンめに　あいてを　こうげきする。\nきゅうしょに　あたりやすい。",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/1/",
+        "name": "ja-Hrkt"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/16/",
+        "name": "omega-ruby-alpha-sapphire"
+      }
+    },
+    {
+      "flavor_text": "風の　刃を　つくり\n２ターン目に　相手を　攻撃する。\n急所に　当たりやすい。",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/11/",
+        "name": "ja"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/15/",
+        "name": "x-y"
+      }
+    },
+    {
+      "flavor_text": "A two-turn attack. Blades of wind hit\nopposing Pokémon on the second turn.\nCritical hits land more easily.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/15/",
+        "name": "x-y"
+      }
+    },
+    {
+      "flavor_text": "Chi la usa genera un turbine al primo turno\ne attacca al secondo. Probabile brutto colpo.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/8/",
+        "name": "it"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/15/",
+        "name": "x-y"
+      }
+    },
+    {
+      "flavor_text": "Primero se prepara y en el segundo turno ataca\nal oponente con ráfagas de viento cortante. Alta\nprobabilidad de ser crítico.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/7/",
+        "name": "es"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/15/",
+        "name": "x-y"
+      }
+    },
+    {
+      "flavor_text": "Eine Attacke, die über zwei Runden geht.\nHohe Volltrefferquote.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/6/",
+        "name": "de"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/15/",
+        "name": "x-y"
+      }
+    },
+    {
+      "flavor_text": "Attaque en deux tours.\nDes lames de vent frappent l’ennemi au second\ntour. Taux de critiques élevé.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/5/",
+        "name": "fr"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/15/",
+        "name": "x-y"
+      }
+    },
+    {
+      "flavor_text": "바람의 칼날을 만들어\n2턴째에 상대를 공격한다.\n급소에 맞기 쉽다.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/3/",
+        "name": "ko"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/15/",
+        "name": "x-y"
+      }
+    },
+    {
+      "flavor_text": "かぜの　やいばを　つくり\n２ターンめに　あいてを　こうげきする。\nきゅうしょに　あたりやすい。",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/1/",
+        "name": "ja-Hrkt"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/15/",
+        "name": "x-y"
+      }
+    },
+    {
+      "flavor_text": "A two-turn attack. Blades of wind hit\nopposing Pokémon on the second turn.\nCritical hits land more easily.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/14/",
+        "name": "black-2-white-2"
+      }
+    },
+    {
+      "flavor_text": "A two-turn attack. Blades of wind hit\nopposing Pokémon on the second turn.\nCritical hits land more easily.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/11/",
+        "name": "black-white"
+      }
+    },
+    {
+      "flavor_text": "Attaque en 2 tours.\nDes lames de vent frappent l’ennemi au\n2è tour. Taux de critiques élevé.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/5/",
+        "name": "fr"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/11/",
+        "name": "black-white"
+      }
+    },
+    {
+      "flavor_text": "A two-turn attack.\nBlades of wind hit the\nfoe on the second\nturn. It has a high\ncritical-hit ratio.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/10/",
+        "name": "heartgold-soulsilver"
+      }
+    },
+    {
+      "flavor_text": "A two-turn attack.\nBlades of wind hit the\nfoe on the second\nturn. It has a high\ncritical-hit ratio.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/9/",
+        "name": "platinum"
+      }
+    },
+    {
+      "flavor_text": "A two-turn attack.\nBlades of wind hit the\nfoe on the second\nturn. It has a high\ncritical-hit ratio.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/8/",
+        "name": "diamond-pearl"
+      }
+    },
+    {
+      "flavor_text": "Blades of wind hit\nthe foe on the 2nd\nturn. It has a high\ncritical-hit ratio.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/7/",
+        "name": "firered-leafgreen"
+      }
+    },
+    {
+      "flavor_text": "A 2-turn move that strikes\nthe foe on the 2nd turn.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/6/",
+        "name": "emerald"
+      }
+    },
+    {
+      "flavor_text": "A 2-turn move that strikes\nthe foe on the 2nd turn.",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/5/",
+        "name": "ruby-sapphire"
+      }
+    },
+    {
+      "flavor_text": "1st turn: Prepare\n2nd turn: Attack",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/4/",
+        "name": "crystal"
+      }
+    },
+    {
+      "flavor_text": "1st turn: Prepare\n2nd turn: Attack",
+      "language": {
+        "url": "https://pokeapi.co/api/v2/language/9/",
+        "name": "en"
+      },
+      "version_group": {
+        "url": "https://pokeapi.co/api/v2/version-group/3/",
+        "name": "gold-silver"
+      }
+    }
+  ],
+  "damage_class": {
+    "url": "https://pokeapi.co/api/v2/move-damage-class/3/",
+    "name": "special"
+  },
+  "meta": {
+    "category": {
+      "url": "https://pokeapi.co/api/v2/move-category/0/",
+      "name": "damage"
+    },
+    "healing": 0,
+    "max_turns": null,
+    "drain": 0,
+    "ailment": {
+      "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+      "name": "none"
+    },
+    "stat_chance": 0,
+    "flinch_chance": 0,
+    "min_hits": null,
+    "ailment_chance": 0,
+    "crit_rate": 1,
+    "min_turns": null,
+    "max_hits": null
+  }
+}

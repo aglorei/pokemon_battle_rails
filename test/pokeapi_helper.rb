@@ -7,7 +7,7 @@ module PokeapiHelper
 
   def stub_show_pokemon_ok(id, **options)
     options[:status] ||= 200
-    options[:body] ||= json_string('show_pokemon.json')
+    options[:body] ||= json_string("show_pokemon_#{id}.json")
     stub_show_pokemon(id, **options)
   end
 
@@ -19,7 +19,7 @@ module PokeapiHelper
 
   def stub_show_move_ok(id, **options)
     options[:status] ||= 200
-    options[:body] ||= json_string('show_move.json')
+    options[:body] ||= json_string("show_move_#{id}.json")
     stub_show_move(id, **options)
   end
 

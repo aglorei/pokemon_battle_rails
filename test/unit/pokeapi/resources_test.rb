@@ -20,15 +20,15 @@ module Pokeapi
     end
 
     test 'move show request ok' do
-      stub_show_move_ok(1)
-      move = Pokeapi::Resources::Move.find(1)
+      stub_show_move_ok(20)
+      move = Pokeapi::Resources::Move.find(20)
       assert move.is_a?(Pokeapi::Resources::Move)
     end
 
     test 'move show request error' do
-      stub_show_move_error(1)
+      stub_show_move_error(20)
       ex = assert_raises(Pokeapi::Client::BadResponse) do
-        Pokeapi::Resources::Move.find(1)
+        Pokeapi::Resources::Move.find(20)
       end
       assert ex.response.is_a?(Net::HTTPClientError)
     end
