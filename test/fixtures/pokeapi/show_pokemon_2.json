@@ -399,36 +399,6 @@
         "url": "https://pokeapi.co/api/v2/move/15/",
         "name": "cut"
       }
-    },
-    {
-      "version_group_details": [
-        {
-          "move_learn_method": {
-            "url": "https://pokeapi.co/api/v2/move-learn-method/3/",
-            "name": "tutor"
-          },
-          "level_learned_at": 0,
-          "version_group": {
-            "url": "https://pokeapi.co/api/v2/version-group/16/",
-            "name": "omega-ruby-alpha-sapphire"
-          }
-        },
-        {
-          "move_learn_method": {
-            "url": "https://pokeapi.co/api/v2/move-learn-method/3/",
-            "name": "tutor"
-          },
-          "level_learned_at": 0,
-          "version_group": {
-            "url": "https://pokeapi.co/api/v2/version-group/14/",
-            "name": "black-2-white-2"
-          }
-        }
-      ],
-      "move": {
-        "url": "https://pokeapi.co/api/v2/move/20/",
-        "name": "bind"
-      }
     }
   ],
   "sprites": {

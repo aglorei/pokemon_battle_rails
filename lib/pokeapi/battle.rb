@@ -23,7 +23,7 @@ module Pokeapi
     end
 
     def fight(defender, attacker)
-      move = attacker.random_move
+      move = attacker.move
       damage = move.power * DAMAGE_SCALAR
       defender.hp -= damage
 

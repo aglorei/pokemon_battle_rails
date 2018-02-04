@@ -80,36 +80,6 @@
       "version_group_details": [
         {
           "move_learn_method": {
-            "url": "https://pokeapi.co/api/v2/move-learn-method/2/",
-            "name": "egg"
-          },
-          "level_learned_at": 0,
-          "version_group": {
-            "url": "https://pokeapi.co/api/v2/version-group/3/",
-            "name": "gold-silver"
-          }
-        },
-        {
-          "move_learn_method": {
-            "url": "https://pokeapi.co/api/v2/move-learn-method/2/",
-            "name": "egg"
-          },
-          "level_learned_at": 0,
-          "version_group": {
-            "url": "https://pokeapi.co/api/v2/version-group/4/",
-            "name": "crystal"
-          }
-        }
-      ],
-      "move": {
-        "url": "https://pokeapi.co/api/v2/move/13/",
-        "name": "razor-wind"
-      }
-    },
-    {
-      "version_group_details": [
-        {
-          "move_learn_method": {
             "url": "https://pokeapi.co/api/v2/move-learn-method/4/",
             "name": "machine"
           },

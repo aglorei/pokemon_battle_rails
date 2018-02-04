@@ -54,17 +54,16 @@ module Pokeapi
 
       attr_reader :hp, :moves
 
-      def random_move
-        move = @moves.keys.sample
-        @moves[move] ||= Move.find(@moves.keys.sample)
+      def move(key = moves.keys.sample)
+        moves[key] ||= Move.find(key)
       end
 
       def hp=(value)
-        @hp = value.ngeative? ? 0.0 : value
+        @hp = value.negative? ? 0.0 : value
       end
 
       def defeated?
-        hp < 1
+        hp.zero?
       end
     end
   end
