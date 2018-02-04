@@ -18,5 +18,5 @@ RUN bundle install --deployment
 
 COPY --chown=pokemaster:pokemaster . /pokemon_battle
 
-ENTRYPOINT ["bundle", "exec"]
-CMD ["rails", "server"]
+ENTRYPOINT ["bin/entrypoint"]
+CMD ["bundle", "exec", "rails", "server"]
