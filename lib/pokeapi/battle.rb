@@ -7,7 +7,7 @@ module Pokeapi
       @contenders = [Resources::Pokemon.find(id1),
                      Resources::Pokemon.find(id2)]
       @history = ["#{contenders.first.name} has an hp of #{contenders.first.hp}.",
-                  "#{contenders.last.name} hast an hp of #{contenders.last.hp}"]
+                  "#{contenders.last.name} has an hp of #{contenders.last.hp}"]
     end
 
     attr_reader :contenders, :history

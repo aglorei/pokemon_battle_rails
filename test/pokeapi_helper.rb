@@ -13,10 +13,10 @@ module PokeapiHelper
                  body: json_string("show_pokemon_#{normalize_pokemon_id(id)}.json"))
   end
 
-  def stub_show_pokemon_error(id)
+  def stub_show_pokemon_error(id, status: 404, body: json_string('show_pokemon_not_found.json'))
     stub_pokeapi(url: Pokeapi::Resources::Pokemon.resource_url(id),
-                 status: 404,
-                 body: json_string('show_pokemon_not_found.json'))
+                 status: status,
+                 body: body)
   end
 
   def stub_show_move_ok(id)
@@ -25,10 +25,10 @@ module PokeapiHelper
                  body: json_string("show_move_#{normalize_move_id(id)}.json"))
   end
 
-  def stub_show_move_error(id)
+  def stub_show_move_error(id, status: 404, body: json_string('show_move_not_found.json'))
     stub_pokeapi(url: Pokeapi::Resources::Move.resource_url(id),
-                 status: 404,
-                 body: json_string('show_move_not_found.json'))
+                 status: status,
+                 body: body)
   end
 
   private
