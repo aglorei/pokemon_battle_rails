@@ -5,34 +5,48 @@ module PokeapiHelper
                       'Host' => 'pokeapi.co',
                       'User-Agent' => 'Ruby' }.freeze
 
-  def stub_show_pokemon_ok(id, options = {})
-    stub_show_pokemon(id, **options) do |url|
-      stub_request(:get, url)
-        .with(headers: REQUEST_HEADERS)
-        .to_return(status: 200,
-                   body: json_string('show_pokemon.json'),
-                   headers: { 'Content-type' => 'application/json' })
-    end
+  def stub_show_pokemon_ok(id, **options)
+    options[:status] ||= 200
+    options[:body] ||= json_string('show_pokemon.json')
+    stub_show_pokemon(id, **options)
   end
 
-  def stub_show_move_ok(id, options = {})
-    stub_show_move(id, **options) do |url|
-      stub_request(:get, url)
-        .with(headers: REQUEST_HEADERS)
-        .to_return(status: 200,
-                   body: json_string('show_move.json'),
-                   headers: { 'Content-type' => 'application/json' })
-    end
+  def stub_show_pokemon_error(id, **options)
+    options[:status] ||= 404
+    options[:body] ||= json_string('show_pokemon_not_found.json')
+    stub_show_pokemon(id, **options)
+  end
+
+  def stub_show_move_ok(id, **options)
+    options[:status] ||= 200
+    options[:body] ||= json_string('show_move.json')
+    stub_show_move(id, **options)
+  end
+
+  def stub_show_move_error(id, **options)
+    options[:status] ||= 404
+    options[:body] ||= json_string('show_move_not_found.json')
+    stub_show_move(id, **options)
   end
 
   private
 
-  def stub_show_pokemon(id, api_version: Pokeapi::Client::API_VERSIONS.last)
-    yield("#{Pokeapi::Client::BASE_URL}/#{api_version}/pokemon/#{id}/")
+  def stub_show_pokemon(id, status:, body:, api_version: Pokeapi::Client::API_VERSIONS.last)
+    url = Pokeapi::Resources::Pokemon.resource_url(id, api_version: api_version)
+    stub_request(:get, url)
+      .with(headers: REQUEST_HEADERS)
+      .to_return(status: status,
+                 body: body,
+                 headers: { 'Content-type' => 'application/json' })
   end
 
-  def stub_show_move(id, api_version: Pokeapi::Client::API_VERSIONS.last)
-    yield("#{Pokeapi::Client::BASE_URL}/#{api_version}/move/#{id}/")
+  def stub_show_move(id, status:, body:, api_version: Pokeapi::Client::API_VERSIONS.last)
+    url = Pokeapi::Resources::Move.resource_url(id, api_version: api_version)
+    stub_request(:get, url)
+      .with(headers: REQUEST_HEADERS)
+      .to_return(status: status,
+                 body: body,
+                 headers: { 'Content-type' => 'application/json' })
   end
 
   def json_file(filename)
