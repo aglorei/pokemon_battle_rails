@@ -3,9 +3,10 @@ module Pokeapi
     class Base
       def initialize(attributes)
         @attributes = attributes
+        @name = attributes['name'].capitalize
       end
 
-      attr_reader :attributes
+      attr_reader :attributes, :name
 
       def self.resource_name
         raise 'most override in subclass'
@@ -30,17 +31,40 @@ module Pokeapi
       def self.resource_name
         'move'
       end
+
+      def power
+        @power ||= attributes['power'].to_i
+      end
     end
 
     class Pokemon < Base
-      def moves_list
-        @moves_list ||= attributes['moves'].collect do |metadata|
-          metadata['move']['name']
-        end
-      end
-
       def self.resource_name
         'pokemon'
+      end
+
+      def initialize(*args)
+        super
+        @hp = attributes['stats']
+          .detect{|s| s['stat']['name'] == 'hp'}['base_stat']
+          .to_f
+        @moves = attributes['moves']
+          .collect{|m| m['move']['name']}
+          .each_with_object({}) {|move, acc| acc[move] = nil}
+      end
+
+      attr_reader :hp, :moves
+
+      def random_move
+        move = @moves.keys.sample
+        @moves[move] ||= Move.find(@moves.keys.sample)
+      end
+
+      def hp=(value)
+        @hp = value < 0 ? 0.0 : value
+      end
+
+      def defeated?
+        hp < 1
       end
     end
   end
