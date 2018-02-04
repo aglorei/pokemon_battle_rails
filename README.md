@@ -2,7 +2,11 @@
 This repository initializes a Rails v5.1.4 server on ruby 2.5.0, configured with a single endpoint to battle Pokemon. The server fetches upstream information from [Pokeapi](https://pokeapi.co/) in order to start a battle and return fight details to the client.
 
 #### Quick Start
-TODO
+```
+docker pull aglorei/pokemon_battle_rails:latest
+docker run -itd --name poke_rails -p 3000:3000 aglorei/pokemon_battle_rails
+curl -X POST -H 'Content-type: application/json' -d '{"pokemon1": "pikachu", "pokemon2": "charmander"}' localhost:3000/battle
+```
 
 ## Battle
 ### POST /battle
