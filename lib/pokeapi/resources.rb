@@ -11,12 +11,12 @@ module Pokeapi
         raise 'most override in subclass'
       end
 
-      def self.resource_url(id, api_version: Client::API_VERSIONS.last)
-        URI("#{Client::BASE_URL}/#{api_version}/#{resource_name}/#{id}/")
+      def self.resource_url(id)
+        URI("#{Client::BASE_URL}/#{Client::API_VERSION}/#{resource_name}/#{id}/")
       end
 
-      def self.request(id, api_version: Client::API_VERSIONS.last)
-        Client.get(resource_url(id, api_version: api_version))
+      def self.request(id)
+        Client.get(resource_url(id))
       end
 
       def self.find(id)

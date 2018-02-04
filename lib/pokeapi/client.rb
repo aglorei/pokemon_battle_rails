@@ -10,10 +10,7 @@ module Pokeapi
     end
 
     BASE_URL = 'https://pokeapi.co/api'.freeze
-    API_VERSIONS = [
-      V1 = 'v1'.freeze,
-      V2 = 'v2'.freeze
-    ].freeze
+    API_VERSION = 'v2'.freeze
 
     def self.get(url)
       Rails.logger.info("Started Pokeapi request to #{url}")
