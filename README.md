@@ -21,9 +21,16 @@ curl -X POST \
 ### Tests
 ```
 docker run -it \
-  -e RAILS_ENV=development \
+  -e RAILS_ENV=test \
   aglorei/pokemon_battle_rails \
   bundle exec rake test
+```
+### Code Analyze ([Rubocop](https://github.com/bbatsov/rubocop))
+```
+docker run -it \
+  -e RAILS_ENV=development \
+  aglorei/pokemon_battle_rails \
+  bundle exec rubocop
 ```
 
 ## Battle
