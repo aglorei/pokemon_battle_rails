@@ -2,7 +2,7 @@ module PokeapiHelper
   FIXTURES_PATH = Rails.root.join('test', 'fixtures', 'pokeapi')
   REQUEST_HEADERS = { 'Accept' => '*/*',
                       'Accept-Encoding' => 'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-                      'Host' => 'pokeapi.co',
+                      'Host' => URI(Pokeapi::Client::BASE_URL).hostname,
                       'User-Agent' => 'Ruby' }.freeze
   POKEMON_MAP = { 'bulbasaur' => 1, 'ivysaur' => 2 }.freeze
   MOVE_MAP = { 'swords-dance' => 14, 'cut' => 15 }.freeze

@@ -1,9 +1,11 @@
 #!/bin/sh
 
+: "${POKEAPI_URL:=https://pokeapi.co/api}"
 : "${RAILS_ENV:=production}"
 : "${RAILS_LOG_TO_STDOUT:=1}"
 : "${SECRET_KEY_BASE:=$(bundle exec rake secret)}"
 
+export POKEAPI_URL
 export RAILS_ENV
 export RAILS_LOG_TO_STDOUT
 export SECRET_KEY_BASE

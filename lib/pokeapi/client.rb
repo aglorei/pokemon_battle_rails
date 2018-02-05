@@ -9,7 +9,7 @@ module Pokeapi
       attr_reader :response
     end
 
-    BASE_URL = 'https://pokeapi.co/api'.freeze
+    BASE_URL = ENV['POKEAPI_URL'].freeze
     API_VERSION = 'v2'.freeze
 
     def self.get(url)
