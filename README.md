@@ -75,3 +75,6 @@ docker run -it \
   ]
 }
 ```
+
+## Interested in Caching?
+Look [here](https://github.com/aglorei/pokemon_app), for putting Nginx and proxy cache in front of this server.
